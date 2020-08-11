@@ -134,9 +134,11 @@
 
 .works {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
+}
+.works .works_site {
+    padding: 0 3px;
 }
 .works_site .link .site {
     width: 350px;
@@ -145,7 +147,7 @@
     background-repeat: no-repeat;
     background-size: 150%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    margin-top: 40px;
+    margin: 40px 10px 0 0;
 }
 .works_site .link .site:hover {
     width: 360px;
