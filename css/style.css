@@ -135,6 +135,7 @@
 .works {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 60px;
 }
 .works_site .link .site {
@@ -144,10 +145,12 @@
     background-repeat: no-repeat;
     background-size: 150%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 40px;
 }
 .works_site .link .site:hover {
     width: 360px;
     height: 180px;
+    margin-top: 30px;
 }
 .works .works-technologies {
     text-align: center;
