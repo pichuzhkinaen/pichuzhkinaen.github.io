@@ -31,16 +31,8 @@ window.addEventListener('DOMContentLoaded', function() {
                 [3, 0, "Other books"],                
                 [27, 3, "Sports"],
                 [28, 24, "Bdsm"]];
-        //Add buttons
-      
-    for(let i = 0; i < data.length; i++) {
-
-        for(let j = 0; j < data.length; j++) {
-            if(data[i][0] == data[j][1]) {
-            }
-        }
-    }
-
+    
+    //Add buttons
     function getListContent() {
         let fragment = new DocumentFragment();
       
@@ -58,7 +50,7 @@ window.addEventListener('DOMContentLoaded', function() {
     catListBtn.append(getListContent());
     
 
-            // Modal
+    // Modal
 
     let modal = document.getElementById("modal"),
         overlay = document.getElementById("overlay"),
@@ -77,7 +69,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     // Закрытие modal при клике вне его окна
     overlay.onclick = function (event) {     
-        // console.log('overlay.onclick');
+        console.log('overlay.onclick');
         //event.preventDefault();
         if (event.target == overlay) {
             modal.style.display = "none";
@@ -85,7 +77,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-        //плавный скролл и pageup
+    //плавный скролл и pageup
 
     (function() {   
         let goTopBtn = document.querySelector('.pageup');
@@ -113,49 +105,12 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     })();
 
-         // Form
-
+    // Form
     let form = document.querySelector('.form'),
         input = form.getElementsByTagName('input');
         // statusMessage.classList.add('status');
 
-        // console.log(form);
-
-        
-    // form.addEventListener('submit', function(event) {
-    //     console.log('123');
-    //     event.preventDefault();
-    //     // form.appendChild(statusMessage);
-
-    //     let request = new XMLHttpRequest();
-    //     request.open('POST', 'server.php');
-    //     request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-
-    //     let formData = new FormData(form);
-
-    //     let obj = {};
-    //     formData.forEach(function(value, key) {
-    //         obj[key] = value;
-    //     });
-
-    //     console.log(formData);
-
-    //     let json = JSON.stringify(obj);
-
-    //     console.log(json);
-
-    //     request.send(json);
-
-    //         // Обнуление инпутов после нажатия кнопки "Вход"
-    //     for (let i = 0; i < input.length; i++) {
-    //         input[i].value = '';
-    //     }
-
-    //     console.log(input);
-
-    // });
-
-        // Меню над товарами - обработка событий
+    // Меню над товарами - обработка событий
 
     let ulMenu = document.querySelector('.shop-buy__menu'),
         btnMenu = document.querySelectorAll('.shop-buy__btn'),
@@ -205,7 +160,7 @@ window.addEventListener('DOMContentLoaded', function() {
     getBtnPurchase();
 
 
-        // Calc покупок. При нажатии на корзину у товара меняется сумма вверху
+    // Calc покупок. При нажатии на корзину у товара меняется сумма вверху
     
     let sum = document.getElementById('sum'), // данные корзины
         sumValue = 0;
