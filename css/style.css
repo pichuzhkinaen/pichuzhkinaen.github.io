@@ -137,19 +137,15 @@
     justify-content: space-between;
     margin-top: 60px;
 }
-.works .works_site {
+.works_site .link .site {
     width: 350px;
     height: 170px;
-}
-.works_personal-registrars .link .site {
-    
-    background: url('/Screenshot_1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-.works_personal-registrars .link .site:hover {
+.works_site .link .site:hover {
     width: 360px;
     height: 180px;
 }
