@@ -1,0 +1,145 @@
+body {
+    background: url(../img/background.png) center (center / cover) no-repeat;
+    background-attachment: scroll;
+}
+//задан размер секции 1250px, padding-top(bottom) = 0, padding-right(left) = 50% от экрана - 50% от ширины контента
+header, section {
+    padding: 0 calc(50% - 625px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 28px;
+    .menu {
+        width: 768px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        &__link {
+            text-decoration: none;
+            font-size: 18px;
+            color: #616161;
+            &:hover {
+                color: #FB973B;
+            }
+            &:active {
+                color: #FB973B;
+            }
+        }
+    }
+    &__logo {
+        width: 150px;
+        height: 66px;
+        margin-right: 40px;
+    }
+    &__phone {
+        font-size: 18px;
+        color: #616161;
+        font-weight: 700;
+        margin-left: 40px;
+        &:hover {
+            color: #FB973B;
+        }
+    }
+}
+
+.feedback {
+    min-height: 585px;
+    background: url(../img/h1-2.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+    padding-top: 25px;
+    .descr {
+        font-size: 24px;
+        color: #616161;
+        margin-top: 17px;
+        span {
+            color:#FB973B;  
+        }
+    }
+    .form {
+        width: 392px;
+        border: 2px solid #e6e6e6;
+        margin-top: 33px;
+        &__phone {
+            position: relative;
+            color: #141419;
+            width: 196px;
+            height: 58px;
+            border: none;
+            font-size: 20px;
+            text-align: center;
+        }
+        &__submit {
+            position: absolute;
+            width: 196px;
+            height: 58px;
+            border: none;
+            background: #FB973B;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+    }
+}
+
+.about-Us {
+    text-align: center;
+    padding: 0 calc(50% - 480px);
+    margin-top: 143px;
+    .title {
+        &__parrent {
+            margin: 0 auto;
+        }
+    }
+    .descr {
+        font-size: 24px;
+        color: #616161;
+        margin-top: 8px;
+        span {
+            color:#FB973B;  
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 42px;
+        .descr {
+            font-size: 18px;
+            color: #141419;
+            &__img {
+                width: 21px;
+            }
+        }
+    }
+}
+
+.partners {
+    display: flex;
+    justify-content: flex-start;
+    margin: 109px 0 70px 0;
+    .descr {
+        font-size: 24px;
+        color: #616161;
+        margin-top: 8px;
+        span {
+            color:#FB973B;  
+        }
+    }
+    &-content {
+        margin-right: 100px;
+        .title {
+            margin: 0;
+        }
+        &__img {
+            width: 200px;
+            margin: 25px 0 20px 0;
+        }
+    }
+}
