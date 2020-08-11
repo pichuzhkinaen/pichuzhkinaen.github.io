@@ -197,7 +197,7 @@
           justify-content: space-between;
   width: 825px;
   height: 305px;
-  background: url("../../src/img/slider.jpg") center/cover no-repeat;
+  background: url("../img/slider.jpg") center/cover no-repeat;
   color: #FFFFFF;
   padding: 130px 12px 76px 12px;
 }
@@ -466,7 +466,7 @@
   background-color: #fff;
   border: none;
   outline: none !important;
-  background: url("/src/icons/basket.png") center/cover no-repeat;
+  background: url("../icons/basket.png") center/cover no-repeat;
   background-size: 90%;
 }
 
@@ -476,7 +476,7 @@
   background-color: #fff;
   border: none;
   outline: none !important;
-  background: url("/src/icons/star.png") center/cover no-repeat;
+  background: url("../icons/star.png") center/cover no-repeat;
   background-size: 80%;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
