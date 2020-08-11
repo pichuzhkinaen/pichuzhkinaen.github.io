@@ -37,7 +37,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
         for(let j = 0; j < data.length; j++) {
             if(data[i][0] == data[j][1]) {
-                console.log(data[j]);
             }
         }
     }
@@ -78,7 +77,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     // Закрытие modal при клике вне его окна
     overlay.onclick = function (event) {     
-        console.log('overlay.onclick');
+        // console.log('overlay.onclick');
         //event.preventDefault();
         if (event.target == overlay) {
             modal.style.display = "none";
@@ -120,41 +119,41 @@ window.addEventListener('DOMContentLoaded', function() {
         input = form.getElementsByTagName('input');
         // statusMessage.classList.add('status');
 
-        console.log(form);
+        // console.log(form);
 
         
-    form.addEventListener('submit', function(event) {
-        console.log('123');
-        event.preventDefault();
-        // form.appendChild(statusMessage);
+    // form.addEventListener('submit', function(event) {
+    //     console.log('123');
+    //     event.preventDefault();
+    //     // form.appendChild(statusMessage);
 
-        let request = new XMLHttpRequest();
-        request.open('POST', 'server.php');
-        request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+    //     let request = new XMLHttpRequest();
+    //     request.open('POST', 'server.php');
+    //     request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
-        let formData = new FormData(form);
+    //     let formData = new FormData(form);
 
-        let obj = {};
-        formData.forEach(function(value, key) {
-            obj[key] = value;
-        });
+    //     let obj = {};
+    //     formData.forEach(function(value, key) {
+    //         obj[key] = value;
+    //     });
 
-        console.log(formData);
+    //     console.log(formData);
 
-        let json = JSON.stringify(obj);
+    //     let json = JSON.stringify(obj);
 
-        console.log(json);
+    //     console.log(json);
 
-        request.send(json);
+    //     request.send(json);
 
-            // Обнуление инпутов после нажатия кнопки "Вход"
-        for (let i = 0; i < input.length; i++) {
-            input[i].value = '';
-        }
+    //         // Обнуление инпутов после нажатия кнопки "Вход"
+    //     for (let i = 0; i < input.length; i++) {
+    //         input[i].value = '';
+    //     }
 
-        console.log(input);
+    //     console.log(input);
 
-    });
+    // });
 
         // Меню над товарами - обработка событий
 
@@ -187,7 +186,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
 
-            // Вставка картинки с корзиной и звездочкой в карточки товаров
+    // Вставка картинки с корзиной и звездочкой в карточки товаров
 
     function getBtnPurchase() {
         let purchase = document.querySelectorAll('.shop-buy__purchase');
