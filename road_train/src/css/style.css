@@ -1,0 +1,539 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  outline: 0;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 54px;
+  background: rgba(25, 67, 107, 0.8);
+  z-index: 99;
+}
+
+.menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 15px 55px;
+  margin: 0;
+}
+
+.menu_link {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.menu_link:hover {
+  color: #17a1bf;
+  text-decoration: none;
+}
+
+.menu .services {
+  display: none;
+  position: absolute;
+  width: 190px;
+  background-color: #19436b;
+  border-top: 3px solid #17a1bf;
+  padding: 0;
+  margin: 12px 0 0 -65px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.menu .services_item {
+  width: 160px;
+  height: 51px;
+  font-size: 14px;
+  text-align: center;
+  list-style-type: none;
+  padding: 14px;
+  margin: 0 auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.menu .services_item:first-child {
+  border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+}
+
+.menu .services_link {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.menu .services_link:hover {
+  color: #17a1bf;
+  text-decoration: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100px;
+  padding-bottom: 15px;
+  margin-top: 54px;
+}
+
+.header .logo_img {
+  width: 200px;
+}
+
+.header .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .phone_number {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1c1c1c;
+  background: url("../icon/phone.png") left center no-repeat;
+  padding-left: 25px;
+}
+
+.header .phone_btn-consult {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #1a446b;
+  color: #fff;
+  border: 1px #1a446b solid;
+  padding: 6px 11px;
+  margin-top: 7px;
+}
+
+.header .phone_btn-consult:hover {
+  background-color: #fff;
+  color: #1a446b;
+  border: 1px #1a446b solid;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header .phone_text {
+  font-size: 11px;
+  font-weight: 600;
+  color: #676767;
+}
+
+.header .email_adress {
+  font-size: 17px;
+  color: #1c1c1c;
+  font-weight: 600;
+  background: url("../icon/email.png") left center no-repeat;
+  padding-left: 25px;
+}
+
+.header .search_input {
+  width: 250px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #ebebeb url("../icon/search.png") center right 5px no-repeat;
+  border: 1px solid #b8b8b8;
+  padding: 5px 20px 5px 8px;
+}
+
+.header .search_result {
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 230%;
+  left: -60%;
+  top: 32px;
+  z-index: 999;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .search .title {
+  font-weight: 600;
+  color: #1a446b;
+}
+
+.header .search_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  border-top: 1px solid #ccc;
+  padding: 5px 8px;
+}
+
+.header .search_item:hover {
+  background: #EFEDEE;
+}
+
+.header .search_img {
+  width: 50px;
+  height: 50px;
+}
+
+.header .search_name {
+  font-weight: 600;
+  font-size: 14px;
+  width: calc(100% - 150px);
+  color: #000;
+  padding-left: 8px;
+}
+
+.header .search_price {
+  width: auto;
+  font-weight: bold;
+  color: #1a446b;
+  text-align: right;
+  left: 0;
+  padding-left: 8px;
+}
+
+.header .search_rub {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a446b;
+}
+
+.header .schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .schedule_text {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  color: #676767;
+}
+
+.header .schedule_time {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.header .schedule_map {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0f4b89;
+  margin-top: 6px;
+}
+
+.header .basket {
+  display: inline-block;
+  height: 39px;
+  padding-left: 50px;
+  background: url("../icon/basket.png") left top no-repeat;
+  text-decoration: none;
+  padding-left: 50px;
+}
+
+.header .basket_count {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #1a446b;
+  background: #1a446b;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.header .basket_count:hover {
+  background-color: #fff;
+  color: #1a446b;
+  border: 1px #1a446b solid;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-search {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlay .modal {
+  display: none;
+  position: relative;
+  top: 30%;
+  max-width: 480px;
+  background-color: #fff;
+  padding: 30px 50px;
+  margin: auto;
+}
+
+.overlay .modal .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../icon/close.png") right top no-repeat;
+  top: -10px;
+  right: -30px;
+  border: none;
+  outline: none;
+}
+
+.overlay .modal .consult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.overlay .modal .consult_title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.overlay .modal .consult_input {
+  border: 1px #ececec solid;
+  font-size: 16px;
+  padding: 3px 8px;
+  margin-bottom: 10px;
+}
+
+.overlay .modal .consult .checkbox_input {
+  display: none;
+}
+
+.overlay .modal .consult .checkbox_check {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #19436b;
+  border: 1px solid #000;
+  -webkit-box-shadow: inset 0 0 0 4px #fff;
+          box-shadow: inset 0 0 0 4px #fff;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.overlay .modal .consult .checkbox_check_noactive {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #737373;
+  background-color: #737373;
+  -webkit-box-shadow: inset 0 0 0 4px #fff;
+          box-shadow: inset 0 0 0 4px #fff;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.overlay .modal .consult_btn {
+  background: #1a446b;
+  border: 1px #1a446b solid;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 6px 11px;
+  margin-top: 5px;
+}
+
+.overlay .modal .consult_btn:hover {
+  background-color: #fff;
+  color: #1a446b;
+  border: 1px #1a446b solid;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 575.99px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 65px;
+  }
+  .header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .logo_img {
+    width: 200px;
+  }
+  .header .phone_number {
+    margin-top: 10px;
+  }
+  .header .email {
+    margin-top: 10px;
+  }
+  .header .schedule {
+    margin-top: 20px;
+  }
+  .header .search_input {
+    width: 200px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 65px;
+  }
+  .header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .logo_img {
+    width: 180px;
+  }
+  .header .phone_number {
+    font-size: 15px;
+  }
+  .header .schedule {
+    margin-top: 20px;
+  }
+  .header .search_input {
+    width: 200px;
+  }
+  .header .schedule_text {
+    font-size: 10px;
+  }
+  .header .schedule_time {
+    font-size: 12px;
+  }
+  .header .schedule_map {
+    font-size: 10px;
+  }
+  .header .basket {
+    height: 30px;
+    background-size: 40%;
+    padding-left: 40px;
+  }
+  .header .basket_count {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .search_input {
+    width: 220px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 930px;
+  }
+  .header .schedule_text {
+    font-size: 12px;
+  }
+  .header .schedule_time {
+    font-size: 14px;
+  }
+  .header .schedule_map {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .header {
+    margin-top: 54px;
+  }
+  .header .search_input {
+    width: 250px;
+  }
+  .header .basket {
+    height: 39px;
+    background-size: 40%;
+    padding-left: 50px;
+  }
+  .header .basket_count {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 38px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,125 @@
+@media (max-width: 575.99px) {
+    .header {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 65px;
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+        .logo_img {
+            width: 200px;
+        }
+        .phone_number {
+            margin-top: 10px;
+        }
+        .email {
+            margin-top: 10px;
+        }
+        .schedule {
+            margin-top: 20px;
+        }
+        .search_input {
+            width: 200px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .header {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 65px;
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+        .logo_img {
+            width: 180px;
+        }
+        .phone_number {
+            font-size: 15px;
+        }
+        .schedule {
+            margin-top: 20px;
+        }
+        .search_input {
+            width: 200px;
+        }
+        .schedule {
+            &_text {
+                font-size: 10px;
+            }
+            &_time {
+                font-size: 12px;
+            }
+            &_map {
+                font-size: 10px;
+            }
+        }
+        .basket {
+            height: 30px;
+            background-size: 40%;
+            padding-left: 40px;
+            &_count {
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        .search_input {
+            width: 220px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 930px;
+    }
+    .header {
+        .schedule {
+            &_text {
+                font-size: 12px;
+            }
+            &_time {
+                font-size: 14px;
+            }
+            &_map {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    .header {
+        margin-top: 54px;
+        .search_input {
+            width: 250px;
+        }
+        .basket {
+            height: 39px;
+            background-size: 40%;
+            padding-left: 50px;
+            &_count {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                line-height: 38px;
+            }
+        }
+    }
+
+}
