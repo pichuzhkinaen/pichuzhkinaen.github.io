@@ -34,7 +34,7 @@
 }
 
 body {
-  background: url(../img/background.png) center center/cover no-repeat;
+  background: url("../img/background.png") center center/cover no-repeat;
   background-attachment: scroll;
 }
 
@@ -102,7 +102,7 @@ header, section {
 
 .feedback {
   min-height: 585px;
-  background: url(../img/h1-2.png);
+  background: url("../img/h1-2.png");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
