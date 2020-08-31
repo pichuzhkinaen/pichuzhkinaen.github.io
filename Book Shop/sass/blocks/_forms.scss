@@ -1,0 +1,24 @@
+.form {
+    margin: 36px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    input {
+        height: 50px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-bottom: 10px;
+        border: none;
+        padding: 0 20px;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 66;
+    }
+    .registration {
+        text-decoration: overline;
+        color: $color_main;
+        font-size: 14px;
+        text-align: left;
+    }
+}

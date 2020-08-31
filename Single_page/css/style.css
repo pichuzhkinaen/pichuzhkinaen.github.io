@@ -1,0 +1,350 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  position: relative;
+}
+
+.promo {
+  min-height: 800px;
+  background: url("../img/header_bg.jpg") center center/cover no-repeat;
+  z-index: 2;
+}
+
+.promo .logo {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.promo .logo_img {
+  margin: 90px 66px 90px 65px;
+}
+
+.promo_header {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 78px;
+}
+
+.promo h1 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.promo .doc {
+  height: 400px;
+  background-color: #FFFFFF;
+  margin-top: 280px;
+}
+
+.photoshop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  margin: 125px auto 116px auto;
+  z-index: 2;
+}
+
+.photoshop_doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 410px;
+  margin-right: 60px;
+}
+
+.photoshop_doc_img {
+  margin-right: 20px;
+}
+
+.photoshop_doc_subtitle {
+  font-size: 27px;
+  color: #000000;
+}
+
+.photoshop_doc_text {
+  width: 266px;
+  color: #4F4E4E;
+  font-size: 14px;
+}
+
+.modal {
+  width: 335px;
+  height: 335px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  padding: 31px 0 25px 0;
+}
+
+.modal input {
+  width: 265px;
+  height: 37px;
+  padding: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DDDDDD;
+  text-align: center;
+  margin-left: 34px;
+}
+
+.modal_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.modal_img .mountain {
+  margin-left: -24px;
+}
+
+.modal_text {
+  font-size: 15px;
+  color: #938E8E;
+  text-align: center;
+  margin-top: 27px;
+}
+
+.modal_press {
+  width: 193px;
+  height: 46px;
+  background-color: #227DD3;
+  border: none;
+  border-radius: 2px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 31px;
+  text-align: center;
+  line-height: 31px;
+  margin: 24px 70px 24px 70px;
+}
+
+.contact {
+  height: 1400px;
+  background: url("../img/contacts_bg.jpg") center center/cover no-repeat;
+  text-align: center;
+}
+
+.contact_shadow {
+  height: 1400px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contact_block {
+  padding: 65px 0 100px 0;
+}
+
+.contact_block .descr {
+  text-align: left;
+  width: 648px;
+  margin: 0 auto;
+}
+
+.contact_block .descr .header {
+  font-size: 39px;
+  color: #FFFFFF;
+  margin: 26px;
+  text-align: center;
+}
+
+.contact_block .descr .text {
+  display: inline-block;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.contact_next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 236px 356px 30px 421px;
+}
+
+.contact_next_img {
+  margin-right: 49px;
+}
+
+.contact_next .descr {
+  text-align: left;
+  width: 500px;
+}
+
+.contact_next .descr .header {
+  font-size: 39px;
+  color: #FFFFFF;
+}
+
+.contact_next .descr .text {
+  display: inline-block;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.contact button {
+  width: 197px;
+  height: 52px;
+  border-width: 3px;
+  border-radius: 8px;
+  background: none;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  font-size: 27px;
+  margin-left: 84px;
+}
+
+.map {
+  width: 100%;
+  height: 635px;
+  position: relative;
+  z-index: 2;
+}
+
+.map_data {
+  width: 431px;
+  height: 431px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  margin-top: 120px;
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.map_data_field {
+  text-align: center;
+  margin-top: 84px;
+}
+
+.map_data input {
+  width: 276px;
+  height: 32px;
+  padding: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DDDDDD;
+}
+
+.map_data .message {
+  height: 81px;
+  padding: 14px 0 56px 12px;
+}
+
+footer {
+  height: 57px;
+  background-color: #43A06D;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 17px;
+}
+
+@media (max-width: 1200px) {
+  .contact_next {
+    margin: 200px 200px 30px 200px;
+  }
+  .contact button {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact_next {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 100px 0;
+  }
+  .contact_next_img {
+    margin-right: 0;
+  }
+  .contact_next .descr {
+    margin: 0 auto;
+    width: 648px;
+  }
+  .contact_next .descr .header {
+    margin: 26px 97px;
+    text-align: center;
+  }
+  .contact button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo .logo {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+  }
+  .promo .logo_img {
+    margin: 70px 15px 50px 40px;
+  }
+  .promo_header {
+    font-size: 30px;
+  }
+  .photoshop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 300px;
+  }
+  .photoshop_doc {
+    margin-bottom: 100px;
+  }
+  .contact_next .descr {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact_next {
+    margin-top: 0;
+  }
+  .contact_next_img {
+    width: 150px;
+    height: 150px;
+  }
+  .contact .descr {
+    width: 400px;
+  }
+  .contact .descr .header {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

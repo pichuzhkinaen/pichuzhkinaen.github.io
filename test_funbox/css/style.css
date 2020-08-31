@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Trebuchet-MS";
+  src: url("../font/Trebuchet-MS.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Exo2.0-Thin";
+  src: url("../font/Exo2.0-Thin.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+.prototype {
+  height: 680px;
+  background: url("/src/background.png");
+  padding: 0 150px;
+}
+
+.prototype_title {
+  font-family: "Exo2.0-Thin";
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.699);
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 47px;
+  margin-top: 0;
+}
+
+.prototype .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.prototype .products .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.prototype .products .product .svg {
+  position: relative;
+  fill: #1698D9;
+  cursor: pointer;
+}
+
+.prototype .products .product .svg-text {
+  font-family: "Trebuchet-MS";
+}
+
+.prototype .products .product .svg-text_top {
+  font-size: 16px;
+  fill: #666666;
+}
+
+.prototype .products .product .svg-text_title {
+  font-size: 48px;
+  font-weight: bold;
+  fill: #000;
+  letter-spacing: 2px;
+}
+
+.prototype .products .product .svg-text_subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  fill: #000;
+}
+
+.prototype .products .product .svg-text_text-main {
+  font-size: 14px;
+  fill: #666666;
+}
+
+.prototype .products .product .svg-circle_text {
+  font-family: "Trebuchet-MS";
+  fill: #fff;
+}
+
+.prototype .products .product .svg-circle_text-1 {
+  font-size: 42px;
+}
+
+.prototype .products .product .svg-circle_text-2 {
+  font-size: 22px;
+}
+
+.prototype .products .product .svg-opacity {
+  fill-opacity: 0;
+}
+
+.prototype .products .product_active .svg-border, .prototype .products .product_active .svg-circle {
+  fill: #D91667;
+}
+
+.prototype .products .product_disabled {
+  pointer-events: none;
+}
+
+.prototype .products .product_disabled .svg-opacity {
+  fill-opacity: 0.75;
+}
+
+.prototype .products .product_disabled .svg-border, .prototype .products .product_disabled .svg-circle {
+  fill: #B3B3B3;
+}
+
+.prototype .products .product .text-bottom {
+  width: 320px;
+  font-family: "Trebuchet-MS";
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.prototype .products .product .text-bottom_link {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1698D9;
+  text-decoration: none;
+  border-bottom: 1px dashed #1698D9;
+}
+
+.prototype .products .product .text-bottom_link:hover {
+  color: #D91667;
+  border-color: #D91667;
+}
+
+.prototype .products .product .text-bottom_disabled {
+  color: #FFFF66;
+}
+/*# sourceMappingURL=style.css.map */

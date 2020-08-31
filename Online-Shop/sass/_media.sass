@@ -1,0 +1,210 @@
+@media (max-width: 1200px)
+    .info
+        .photo
+            width: 40px
+            height: 40px
+@media (max-width: 991px)
+    .subheader
+        &_logo
+            width: 80%
+            margin-top: 20px
+        &_menu
+            margin-top: 75px
+            transform: translateX(-44%)
+        &_search
+            margin-top: 20px
+            transform: translateX(-55%)
+        .basket
+            margin-top: -35px
+            margin-left: 125px
+    .slider
+        &_content
+            .text
+                margin: 184px 300px 0 48px
+    .shop
+        &_product
+        .aside
+            width: 180px
+            height: 250px
+    .contacts
+        margin-top: 20px
+        padding-bottom: 5px
+        .text
+            font-size: 14px
+    .info
+        &_title
+            margin-top: 30px
+        &_text
+            font-size: 12px
+        .photo
+            width: 32px
+            height: 32px
+            margin: 7px 5px 5px 0
+        .plugin
+            font-size: 13px
+        &_twitter
+            margin: 20px 5px 0 5px
+            .block
+                &_circle
+                    width: 0
+                    height: 0
+                    margin: 0
+            &_sm
+                .circle
+                    width: 30px
+                    height: 30px
+                    margin: 10px 5px 0 0
+    .end
+        font-size: 11px
+        &_menu
+            &_item
+                padding: 0 4px
+    .no-gutter > [class*='col-']
+        padding-right: 0
+        padding-left: 0
+
+@media (max-width: 767px)
+    .navi
+        .menu_2
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            padding: 20px 15px
+            background-color: rgba(0, 0, 0, 0.8)
+            transition: 0.6s all
+            &_active
+                left: 0
+            &_item
+                padding-right: 0
+                border: none
+                margin-top: 10px
+                width: 100%
+                text-align: center
+                padding: 5px 0
+            &_link
+                font-size: 20px
+                display: block
+        .hamburger
+            display: block
+            position: absolute
+            right: 65px
+            // top: 50%
+            transform: translateY(-220%)
+            width: 26px
+            height: 12px
+            span
+                display: block
+                height: 2px
+                width: 100%
+                background-color: #fff
+                margin-bottom: 2px
+                transition: 0.5s all
+            &_active
+                span
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+        .xs-hidden
+            display: none
+        .xs-visible
+            display: block
+    .subheader
+        &_logo
+            margin-top: 30px
+        &_search
+            transform: translateX(-95%)
+        .basket
+            margin-top: -30px
+            margin-left: 35px
+            &_circle
+                width: 30px
+                height: 30px
+                .icon
+                    font-size: 12px
+            &_text
+                font-size: 12px
+    .slider
+        &_content
+            .text
+                margin: 184px 30px 0 48px
+    .banner
+        margin: 95px 0 0 20px
+    .info
+        .photo
+            width: 50px
+            height: 50px
+        &_twitter
+            margin-left: 70px
+        &_contact
+            margin-left: 70px
+            &_sm
+                .circle
+                    margin: 10px 5px 10px 0
+    .end
+        &_copy
+            margin-top: 10px
+        &_menu
+           margin: 8px 0 0 0
+@media (max-width: 575px)
+    .navi
+        .menu
+            margin-left: 30px
+    .subheader
+        &_logo
+            width: 20%
+            margin-left: 20px
+        &_menu
+            margin-top: 35px
+            transform: translateX(13%)
+        &_search
+            margin-top: -87px
+            transform: translateX(100%)
+        .basket
+            margin-top: -87px
+            margin-left: 195px
+    .slider
+        &_content
+            .circle1
+                width: 58px
+                height: 58px
+                margin-left: 20px
+            .circle2
+                width: 58px
+                height: 58px
+            .text
+                font-size: 16px
+                margin: 184px 20px 0 20px
+    .shop
+        margin: 47px 0 20px 25px
+        .side2
+            height: 300px
+    .contacts
+        &_info
+            margin-left: 70px
+    .info
+        &_facebook
+            margin-left: 70px
+        &_user
+            justify-content: flex-start
+            .photo
+                width: 40px
+                height: 40px
+        &_line
+            width: 70%
+            margin: 0
+        &_information
+            margin-left: 70px
+    .end
+        &_copy
+            margin-left: 70px
+        &_menu
+            margin-left: 70px
