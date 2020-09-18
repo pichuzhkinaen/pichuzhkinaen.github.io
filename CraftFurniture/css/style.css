@@ -224,7 +224,7 @@ body {
 }
 
 .header .circle-bg {
-  margin: 20% 0 0 30%;
+  margin: 20% 0 0 38%;
 }
 
 .title {
@@ -454,7 +454,8 @@ body {
       grid-template-rows: 1fr 1fr;
   grid-column-gap: 5%;
   grid-row-gap: 5%;
-      grid-template-areas: "photo1 photo2 photo2" "photo1 photo3 photo4";
+      grid-template-areas: "photo1 photo2 photo2"
+ "photo1 photo3 photo4";
 }
 
 .our-company {
