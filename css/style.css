@@ -134,10 +134,13 @@
 .works {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .works .works_site {
-  width: 360px;
-  height: 180px;
+  /* width: 360px;
+  height: 180px; */
+  width: 400px;
+  height: 200px;
   margin-top: 70px;
 }
 .works_site .site {
