@@ -502,7 +502,7 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .header {
-  background: url("/src/img/main-bg.png") no-repeat;
+  background: url("../img/main-bg.png") no-repeat;
   background-position: -245px -100px;
 }
 
@@ -556,7 +556,7 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .search {
-  background: url("/src/img/bg-section-search.png") center center/cover no-repeat;
+  background: url("../img/bg-section-search.png") center center/cover no-repeat;
   text-align: center;
   padding: 119px 0;
 }
@@ -723,7 +723,7 @@ h1, h2, h3, h4, h5, ul {
 .builder__photo {
   width: 50%;
   height: 410px;
-  background: url("/src/img/builder.png") left no-repeat;
+  background: url("../img/builder.png") left no-repeat;
 }
 
 .builder__text {
@@ -799,7 +799,7 @@ h1, h2, h3, h4, h5, ul {
 
 .count {
   height: 450px;
-  background: url("/src/img/count-bg.png");
+  background: url("../img/count-bg.png");
 }
 
 .count-overlay {
@@ -861,7 +861,7 @@ h1, h2, h3, h4, h5, ul {
 .command .semicircle {
   width: 75%;
   height: 296px;
-  background: url("/src/img/Ellipse-bg.png") no-repeat;
+  background: url("../img/Ellipse-bg.png") no-repeat;
   background-position: 50% 100%;
   margin: 100px auto 0 auto;
 }
@@ -1006,15 +1006,15 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .articles-item__photo1 {
-  background: url("/src/img/article1.png") center no-repeat;
+  background: url("../img/article1.png") center no-repeat;
 }
 
 .articles-item__photo2 {
-  background: url("/src/img/article2.png") center no-repeat;
+  background: url("../img/article2.png") center no-repeat;
 }
 
 .articles-item__photo3 {
-  background: url("/src/img/article3.png") center no-repeat;
+  background: url("..img/article3.png") center no-repeat;
 }
 
 .articles-text {
@@ -1466,7 +1466,7 @@ h1, h2, h3, h4, h5, ul {
 .carousel .hexagon__bg {
   width: 91px;
   height: 106px;
-  background: url("/src/icon/hexagon(2).svg") no-repeat;
+  background: url("../icon/hexagon(2).svg") no-repeat;
   background-size: 100%;
   padding: 30px 0;
   margin: 0 auto;
@@ -1711,7 +1711,7 @@ h1, h2, h3, h4, h5, ul {
 .experience__photo {
   width: 501px;
   height: 373px;
-  background: url("/src/img/photo-advantages.png") no-repeat;
+  background: url("../img/photo-advantages.png") no-repeat;
   background-position: 73% 0;
   margin-left: auto;
 }
