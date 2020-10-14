@@ -886,11 +886,12 @@ h1, h2, h3, h4, h5, ul {
 .command .semicircle-on__avatar-1 {
   -webkit-transform: translate(160%, 300%);
           transform: translate(160%, 300%);
+      
 }
 
 .command .semicircle-on__avatar-2 {
-  -webkit-transform: translate(-30%, 55%);
-          transform: translate(-30%, 55%);
+  -webkit-transform: translate(30%, 55%);
+          transform: translate(30%, 55%);
 }
 
 .command .semicircle-on__avatar-3 {
