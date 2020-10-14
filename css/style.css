@@ -141,14 +141,14 @@
   display: block;
   width: 370px;
   height: 250px;
-
+  /* background: url('/Screenshot_10.jpg'); */
 }
 .works_site .site {
   display: block;
   width: 370px;
   height: 250px;
 }
-.works_site .site:hover {
+.works_site:hover {
   background: rgba(0,0,0,0.5);
 }
 .works .works-technologies {

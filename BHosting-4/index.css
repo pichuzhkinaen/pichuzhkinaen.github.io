@@ -503,7 +503,8 @@ h1, h2, h3, h4, h5, ul {
 
 .header {
   background: url("main-bg.png") no-repeat;
-  background-position: -245px -100px;
+  background-position: -50px -200px;
+  background-size: 120%;
 }
 
 .header-wrapper {
@@ -884,13 +885,13 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .command .semicircle-on__avatar-1 {
-  -webkit-transform: translate(-80%, 300%);
-          transform: translate(-80%, 300%);
+  -webkit-transform: translate(-160%, 300%);
+          transform: translate(-160%, 300%);
 }
 
 .command .semicircle-on__avatar-2 {
-  -webkit-transform: translate(-80%, 55%);
-          transform: translate(-80%, 55%);
+  -webkit-transform: translate(-30%, 55%);
+          transform: translate(-30%, 55%);
 }
 
 .command .semicircle-on__avatar-3 {
@@ -899,13 +900,13 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .command .semicircle-on__avatar-4 {
-  -webkit-transform: translate(80%, 55%);
-          transform: translate(80%, 55%);
+  -webkit-transform: translate(-30%, 55%);
+          transform: translate(-30%, 55%);
 }
 
 .command .semicircle-on__avatar-5 {
-  -webkit-transform: translate(80%, 300%);
-          transform: translate(80%, 300%);
+  -webkit-transform: translate(-160%, 300%);
+          transform: translate(-160%, 300%);
 }
 
 .command .semicircle-on__img {
@@ -2241,8 +2242,8 @@ details[open] .descr {
   background: linear-gradient(to top right, #31aae2, #9d35c0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transform: translate(-37%, -87%);
-          transform: translate(-37%, -87%);
+  -webkit-transform: translate(-37%, -86%);
+          transform: translate(-37%, -86%);
 }
 
 @media (max-width: 1599px) {
