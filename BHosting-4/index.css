@@ -2401,6 +2401,7 @@ details[open] .descr {
   }
   .command .semicircle {
     background: none;
+    width: auto;
   }
   .command .semicircle-inner__descr {
     width: 460px;
