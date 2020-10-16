@@ -180,10 +180,12 @@
 
 .works_site :hover > .site-overlay {
   display: block;
+  cursor: default;
 }
 
 .works_site :hover > .site-overlay_btn {
   display: block;
+  cursor: pointer;
 }
 
 .site-overlay {

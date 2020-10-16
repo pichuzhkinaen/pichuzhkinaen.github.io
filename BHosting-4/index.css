@@ -859,10 +859,9 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .command .semicircle {
-  width: 75%;
+  width: 911px;
   height: 296px;
-  background: url("Ellipse-bg.png") no-repeat;
-  background-position: 50% 100%;
+  background: url("Ellipse-bg.png") center no-repeat;
   margin: 100px auto 0 auto;
 }
 
@@ -872,7 +871,6 @@ h1, h2, h3, h4, h5, ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: center;
 }
 
 .command .semicircle-on__avatar {
@@ -884,14 +882,14 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .command .semicircle-on__avatar-1 {
-  -webkit-transform: translate(160%, 300%);
-          transform: translate(160%, 300%);
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
       
 }
 
 .command .semicircle-on__avatar-2 {
-  -webkit-transform: translate(30%, 55%);
-          transform: translate(30%, 55%);
+  -webkit-transform: translate(-60%, 65%);
+          transform: translate(-60%, 65%);
 }
 
 .command .semicircle-on__avatar-3 {
@@ -900,13 +898,13 @@ h1, h2, h3, h4, h5, ul {
 }
 
 .command .semicircle-on__avatar-4 {
-  -webkit-transform: translate(-30%, 55%);
-          transform: translate(-30%, 55%);
+  -webkit-transform: translate(60%, 65%);
+          transform: translate(60%, 65%);
 }
 
 .command .semicircle-on__avatar-5 {
-  -webkit-transform: translate(-160%, 300%);
-          transform: translate(-160%, 300%);
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
 }
 
 .command .semicircle-on__img {
@@ -2406,6 +2404,9 @@ details[open] .descr {
   }
   .command .semicircle-inner__descr {
     width: 460px;
+  }
+  .command .semicircle-on__avatar {
+    margin: 0 auto;
   }
   .dots__item_active::after {
     line-height: 1.1rem;
