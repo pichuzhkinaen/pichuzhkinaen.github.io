@@ -870,7 +870,7 @@ h1, h2, h3, h4, h5, ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+          justify-content: space-between;
 }
 
 .command .semicircle-on__avatar {
