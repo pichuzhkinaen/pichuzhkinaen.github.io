@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Kurale';
+	src: local('Kurale'),
+		url('../fonts/Kurale/Kurale.woff') format('woff'),
+		url('../fonts/Kurale/Kurale.woff2') format('woff2'),
+		url('../fonts/Kurale/Kurale.ttf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Nunito';
+	src: local('Nunito Bold'), local('Nunito-Bold'),
+		url('../fonts/Nunito/Nunitobold.woff') format('woff'),
+		url('../fonts/Nunito/Nunitobold.woff2') format('woff2'),
+		url('../fonts/Nunito/Nunitobold.ttf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Nunito';
+	src: local('Nunito Semi Bold'), local('Nunito-Semi-Bold'),
+		url('../fonts/Nunito/Nunitosemibold.woff') format('woff'),
+		url('../fonts/Nunito/Nunitosemibold.woff2') format('woff2'),
+		url('../fonts/Nunito/Nunitosemibold.ttf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Nunito';
+	src: local('Nunito Regular'), local('Nunito-Regular'),
+		url('../fonts/Nunito/Nunitoregular.woff') format('woff'),
+		url('../fonts/Nunito/Nunitoregular.woff2') format('woff2'),
+		url('../fonts/Nunito/Nunitoregular.ttf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

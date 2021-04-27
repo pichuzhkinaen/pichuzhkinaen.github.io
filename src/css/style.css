@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Kurale';
+  src: local("Kurale"), url("../fonts/Kurale/Kurale.woff") format("woff"), url("../fonts/Kurale/Kurale.woff2") format("woff2"), url("../fonts/Kurale/Kurale.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local("Nunito Bold"), local("Nunito-Bold"), url("../fonts/Nunito/Nunitobold.woff") format("woff"), url("../fonts/Nunito/Nunitobold.woff2") format("woff2"), url("../fonts/Nunito/Nunitobold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local("Nunito Semi Bold"), local("Nunito-Semi-Bold"), url("../fonts/Nunito/Nunitosemibold.woff") format("woff"), url("../fonts/Nunito/Nunitosemibold.woff2") format("woff2"), url("../fonts/Nunito/Nunitosemibold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local("Nunito Regular"), local("Nunito-Regular"), url("../fonts/Nunito/Nunitoregular.woff") format("woff"), url("../fonts/Nunito/Nunitoregular.woff2") format("woff2"), url("../fonts/Nunito/Nunitoregular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+  background-color: #fff;
+  color: #202221;
+  position: relative;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.container {
+  width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.main {
+  position: relative;
+  background: linear-gradient(270.09deg, #E9EAEC 0.08%, #D5D9DA 99.14%);
+}
+
+.main__background {
+  background: url("../image/main-bg.jpg") center/cover no-repeat;
+  opacity: .8;
+}
+
+.main__info {
+  text-align: center;
+  padding: 200px 0 150px 0;
+}
+
+.main__name {
+  display: inline-block;
+  font-family: 'Kurale', sans-serif;
+  font-size: 46px;
+  border: 3px #01989B solid;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.main__profession {
+  color: #000;
+}
+
+.menu {
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  list-style-type: none;
+  background-color: #01989B;
+  color: #fff;
+  border: 1px #F3F3F3 solid;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.menu__item:nth-child(2) {
+  border-right: none;
+  border-left: none;
+}
+
+.subtitle {
+  font-size: 32px;
+}
+
+.about {
+  font-size: 18px;
+  background: rgba(160, 134, 135, 0.17);
+}
+
+.about__description {
+  position: relative;
+  padding: 100px 0 100px 0;
+}
+
+.about__text-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-right: 272px;
+}
+
+.about__text {
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #fff;
+  margin-top: 30px;
+}
+
+.about__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.about__technologies {
+  margin-top: 30px;
+}
+
+.about__subtitle {
+  font-size: 22px;
+}
+
+.about__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  width: 30%;
+  -webkit-columns: 2;
+          columns: 2;
+  margin-top: 20px;
+}
+
+.about__item::before {
+  content: '—';
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.portfolio {
+  padding: 100px 0 100px 0;
+}
+
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.portfolio__link {
+  -webkit-box-shadow: 0 0 14px #dcdcdc;
+          box-shadow: 0 0 14px #dcdcdc;
+}
+/*# sourceMappingURL=style.css.map */
