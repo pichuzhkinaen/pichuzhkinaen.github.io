@@ -184,6 +184,7 @@ h1, h2, h3 {
 }
 
 .portfolio {
+  background: #E9EAEC;
   padding: 100px 0 100px 0;
 }
 
@@ -191,19 +192,45 @@ h1, h2, h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 30px;
+  margin-left: -36px;
+  margin-right: -36px;
 }
 
 .portfolio__link {
   -webkit-box-shadow: 0 0 14px #dcdcdc;
           box-shadow: 0 0 14px #dcdcdc;
+  margin: 0 36px 36px;
+  -webkit-transition: -webkit-box-shadow .3s ease;
+  transition: -webkit-box-shadow .3s ease;
+  transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease, -webkit-box-shadow .3s ease;
+}
+
+.portfolio__link:hover {
+  -webkit-box-shadow: 0 0 7px #01989B;
+          box-shadow: 0 0 7px #01989B;
+}
+
+.portfolio__image {
+  display: block;
+}
+
+.portfolio__button {
+  display: block;
+  font-size: 18px;
+  color: #01989B;
+  background: #fff;
+  border: 2px solid #01989B;
+  padding: 8px 30px;
+  margin: 20px auto 0;
 }
 /*# sourceMappingURL=style.css.map */

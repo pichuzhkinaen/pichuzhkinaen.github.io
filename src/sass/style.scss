@@ -122,15 +122,45 @@ h1, h2, h3 {
     }
 }
 .portfolio {
+    background: #E9EAEC;
     padding: 100px 0 100px 0;
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
         margin-top: 30px;
+        margin-left: -36px;
+        margin-right: -36px;
     }
     &__link {
         box-shadow: 0 0 14px #dcdcdc;
+        margin: 0 36px 36px;
+        transition: box-shadow .3s ease;
+        &:hover {
+            box-shadow: 0 0 7px $color-main;
+        }
+    }
+    &__image {
+        // position: relative;
+        display: block;
+        // &::before {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     content: '';
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(160, 134, 135, .5);
+        // }
+    }
+    &__button {
+        display: block;
+        font-size: 18px;
+        color: $color-main;
+        background: $color-white;
+        border: 2px solid $color-main;
+        padding: 8px 30px;
+        margin: 20px auto 0;
     }
 }
