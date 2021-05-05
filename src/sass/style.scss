@@ -1,5 +1,6 @@
 @import "_fonts";
 @import "_variables";
+@import "_animate";
 
 html, body {
     font-family: 'Nunito', sans-serif;
@@ -27,14 +28,15 @@ h1, h2, h3 {
 }
 .main {
     position: relative;
+    z-index: 1;
     background: linear-gradient(270.09deg, #E9EAEC 0.08%, #D5D9DA 99.14%);
+    background: url('../image/main-bg.jpg') center / cover no-repeat;
     &__background {
-        background: url('../image/main-bg.jpg') center / cover no-repeat;
         opacity: .8;
     }
     &__info {
         text-align: center;
-        padding: 200px 0 150px 0;
+        padding: 200px 0 100px 0;
     }
     &__name {
         display: inline-block;
@@ -43,15 +45,19 @@ h1, h2, h3 {
         border: 3px $color-main solid;
         background-color: $color-white;
         padding: 10px 20px;
+        cursor: default;
     }
     &__profession {
         color: #000;
+        margin-top: 50px;
+        cursor: default;
     }
 }
 .menu {
     position: absolute;
     bottom: -20px;
     right: 50%;
+    z-index: 2;
     transform: translateX(50%);
     &__list {
         display: flex;
@@ -63,13 +69,20 @@ h1, h2, h3 {
     &__item {
         list-style-type: none;
         background-color: $color-main;
-        color: $color-white;
+        cursor: pointer;
         border: 1px $color-bg-light solid;
         padding: 10px 40px;
-        cursor: pointer;
+        transition: all .3s ease;
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
         &:nth-child(2) {
             border-right: none;
             border-left: none;
+        }
+        &:hover {
+            background-color: #178b8d;
         }
     }
 }
@@ -133,34 +146,152 @@ h1, h2, h3 {
         margin-left: -36px;
         margin-right: -36px;
     }
-    &__link {
-        box-shadow: 0 0 14px #dcdcdc;
-        margin: 0 36px 36px;
+    &__item {
+        position: relative;
+        // display: none;
+        box-shadow: 0 0 1px #b8b7b7;
+        margin: 0 33px 33px;
         transition: box-shadow .3s ease;
         &:hover {
-            box-shadow: 0 0 7px $color-main;
+            .portfolio__overlay {
+                opacity: 1;
+            }
+        }
+        &:first-child {
+            position: relative;
+            &::after {
+                position: absolute;
+                top: -24px;
+                right: -40px;
+                content: 'New';
+                width: 70px;
+                height: 34px;
+                background: #a43d44;
+                font-weight: 700;
+                font-size: 18px;
+                color: #fff;
+                text-align: center;
+                border-radius: 8px 8px 8px 0;
+                padding: 5px 0;
+                box-sizing: border-box;
+            }
         }
     }
     &__image {
-        // position: relative;
         display: block;
-        // &::before {
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     content: '';
-        //     width: 100%;
-        //     height: 100%;
-        //     background-color: rgba(160, 134, 135, .5);
-        // }
+    }
+    &__overlay {
+        opacity: 0;
+        position: absolute;
+        top: -10px;
+        bottom: -10px;
+        right: -10px;
+        left: -10px;
+        background: rgba(239, 235, 235, 0.70);
+        box-shadow: 0 0 2px rgb(255, 255, 255);
+        transition: all .3s ease;
+        &::before {
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            right: 10px;
+            left: 10px;
+            content: '';
+            border: 2px solid $color-main;
+        }
+    }
+    &__open {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: $color-main;
+        border: 2px solid $color-main;
+        background: transparent;
+        cursor: pointer;
+        padding: 8px 30px;
+        transition: all .3s ease;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
     }
     &__button {
         display: block;
+        display: none;
         font-size: 18px;
         color: $color-main;
         background: $color-white;
         border: 2px solid $color-main;
         padding: 8px 30px;
         margin: 20px auto 0;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            background: $color-main;
+            color: $color-white;
+        }
     }
+}
+.footer {
+    background: url('/src/image/footer-bg.jpg');
+    border-top: 10px solid $color-main;
+    padding: 70px 0;
+    &__content-wrapper {
+        width: 50%;
+        padding-right: 90px;
+        margin-left: auto;
+        margin-right: 90px;
+    }
+    &__title {
+
+    }
+}
+.social {
+    columns: 2;
+    margin-top: 30px;
+    &__link {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-black;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        padding-left: 32px;
+        margin-right: 46px;
+        margin-bottom: 26px;
+        transition: all .3s ease;
+        &_net_github {
+            background-image: url('/src/image/github.svg');
+        }
+        &_net_whatsapp {
+            background-image: url('/src/image/whatsapp.svg');
+        }
+        &_net_instagram {
+            background-image: url('/src/image/instagram.svg');
+        }
+        &_net_vk {
+            background-image: url('/src/image/vk-com.svg');
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 32px;
+                content: '';
+                width: calc(100% - 32px);
+                height: 1px;
+                background-color: $color-black;
+                animation: move_line .3s linear;
+            }
+        }
+    }
+}
+.active {
+    display: block;
 }

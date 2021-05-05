@@ -26,8 +26,8 @@
 </head>
 
 <body>
-    <section class="main">
-        <div class="container main__background">
+    <section class="main main__background">
+        <div class="container">
             <div class="main__info">
                 <span class="main__name">Екатерина Пичужкина</span>
                 <h1 class="main__profession">{ Портфолио верстальщика }</h1>
@@ -35,21 +35,21 @@
         </div>
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__item">Обо мне</li>
-                <li class="menu__item">Портфолио</li>
-                <li class="menu__item">Контакты</li>
+                <li class="menu__item"><a href="#about">Обо мне</a></li>
+                <li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+                <li class="menu__item"><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="about__description">
                 <div class="about__text-wrapper">
                     <h2 class="subtitle">Обо мне</h2>
                     <div class="about__text">Приветствую Вас на своем сайте-портфолио. Меня зовут Екатерина. Живу в Москве. Занимаюсь HTML-версткой сайтов. У меня полностью кроссбраузерная, адаптивная и валидная верстка. Для обеспечения выполнения требований, предъявляемых к верстке сайта в процессе работы над проектом я использую сборщик проектов Gulp.</div>
                 </div>
-                <img class="about__image" src="image/about-bg.jpg" alt="image about">
+                <img class="about__image" src="/src/image/about-bg.jpg" alt="image about">
                 <div class="about__technologies">
                     <h3 class="about__subtitle">Используемые технологии</h3>
                     <ul class="about__list">
@@ -72,46 +72,80 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="subtitle">Портфолио</h2>
             <div class="portfolio__list">
-                <a href="https://komplex-media.com/" class="portfolio__link" target="_blank">
+                <div class="portfolio__item">
                     <img class="portfolio__image" src="/src/image/Screenshot_12.jpg" alt="site" class="site">
-                </a>
-                <a href="http://xn--80aebufbdkxu6k.xn--p1ai/" class="portfolio__link" target="_blank">
+                    <div class="portfolio__overlay">
+                        <a href="https://komplex-media.com/" class="portfolio__open" target="_blank">Открыть</a>
+                        <!-- <div class="portfolio__line-wrapper">
+                            <span class="portfolio__line"></span>
+                            <span class="portfolio__line"></span>
+                            <span class="portfolio__line"></span>
+                            <span class="portfolio__line"></span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__image" src="/src/image/Screenshot_11.jpg" alt="site" class="site">
-                </a>
-                <a href="https://pichuzhkinaen.github.io/BHosting-4" class="portfolio__link" target="_blank">
+                    <div class="portfolio__overlay">
+                        <a href="http://xn--80aebufbdkxu6k.xn--p1ai/" class="portfolio__open" target="_blank">Открыть</a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__image" src="/src/image/Screenshot_10.jpg" alt="site" class="site">
-                </a>
-                <a href="https://pichuzhkinaen.github.io/CraftFurniture" class="portfolio__link" target="_blank">
+                    <div class="portfolio__overlay">
+                        <a  href="https://pichuzhkinaen.github.io/BHosting-4" class="portfolio__open" target="_blank">Открыть</a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__image" src="/src/image/Screenshot_9.jpg" alt="site" class="site">
-                </a>
-                <a href="https://pichuzhkinaen.github.io/shoes" class="portfolio__link" target="_blank">
+                    <div class="portfolio__overlay">
+                        <a href="https://pichuzhkinaen.github.io/CraftFurniture" class="portfolio__open" target="_blank">Открыть</a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__image" src="/src/image/Screenshot_8.jpg" alt="site" class="site">
-                </a>
-                <a href="https://pichuzhkinaen.github.io/Personal_registrars/" class="portfolio__link" target="_blank">
+                    <div class="portfolio__overlay">
+                        <a href="https://pichuzhkinaen.github.io/shoes" class="portfolio__open" target="_blank">Открыть</a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__image" src="/src/image/Screenshot_1.jpg" alt="site" class="site">
-                </a>
-                <a href="https://pichuzhkinaen.github.io/LED-lamp/" class="portfolio__link" target="_blank">
+                    <div class="portfolio__overlay">
+                        <a href="https://pichuzhkinaen.github.io/Personal_registrars/" class="portfolio__open" target="_blank">Открыть</a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__image" src="/src/image/Screenshot_2.jpg" alt="site" class="site">
-                </a>
-                <a href="https://pichuzhkinaen.github.io/Book Shop/" class="portfolio__link" target="_blank">
+                    <div class="portfolio__overlay">
+                        <a href="https://pichuzhkinaen.github.io/LED-lamp/"  class="portfolio__open" target="_blank">Открыть</a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__image" src="/src/image/Screenshot_3.jpg" alt="site" class="site">
-                </a>
+                    <div class="portfolio__overlay">
+                        <a href="https://pichuzhkinaen.github.io/Book Shop/"  class="portfolio__open" target="_blank">Открыть</a>
+                    </div>
+                </div>
             </div>
             <button class="portfolio__button">Увидеть больше</button>
         </div>
     </section>
 
-    <footer class="footer">
-        <h2 class="subtitle footer__title">Контакты</h2>
-        <div class="social">
-            <a class="social__link" href="" target="_blank">pichuzhkinaen</a>
-            <a class="social__link" href="" target="_blank">+7 (952) 455 07 64</a>
-            <a class="social__link" href="" target="_blank">rina.pichuzhkina</a>
-            <a class="social__link" href="" target="_blank">rina.pichuzhkina</a>
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer__content-wrapper">
+                <h2 class="subtitle footer__title">Контакты</h2>
+                <div class="social">
+                    <a class="social__link social__link_net_github" href="https://github.com/pichuzhkinaen" target="_blank">pichuzhkinaen</a>
+                    <a class="social__link social__link_net_whatsapp" href="https://wa.me/79524550764" target="_blank">+7 (952) 455 07 64</a>
+                    <a class="social__link social__link_net_instagram" href="https://www.instagram.com/rina.pichuzhkina/" target="_blank">rina.pichuzhkina</a>
+                    <a class="social__link social__link_net_vk" href="https://vk.com/rina.pichuzhkina" target="_blank">rina.pichuzhkina</a>
+                </div>
+            </div>
         </div>
     </footer>
     
