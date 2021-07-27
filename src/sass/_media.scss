@@ -1,0 +1,125 @@
+@media screen and (max-width: 1499px) {
+    .container {
+      max-width: 1060px;
+    }
+    .footer__content-wrapper {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .about__image {
+        width: 540px;
+    }
+    .about__technologies {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 840px;
+    }
+    .main__name {
+        font-size: 36px;
+    }
+    .main__info {
+        padding: 140px 0 60px 0;
+    }
+    .about__image {
+        width: 440px;
+    }
+    .footer {
+        background: #F3F3F5;
+        padding: 40px 0;
+        &__content-wrapper {
+            width: auto;
+            padding-right: 0;
+            margin: 0;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .main {
+        background: url('../image/main-bg-mobile.jpg') center/cover no-repeat;
+    }
+    .section {
+        padding: 80px 0 80px 0;
+    }
+    .subtitle {
+        text-align: center;
+    }
+    .about__technologies {
+        width: 50%;
+    }
+    .portfolio__list {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .main {
+        &__info {
+            padding: 100px 0 40px 0;
+        }
+        &__name {
+            font-size: 28px;
+        }
+        &__profession {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    }
+    .menu__item  {
+        padding: 10px 30px;
+    }
+    .section {
+        padding: 60px 0 40px 0;
+    }
+    .subtitle {
+        font-size: 26px;
+    }
+    .about {
+        &__image {
+            display: none;
+        }
+        &__technologies {
+            width: auto;
+        }
+    }
+    .social {
+        columns: 1;
+        text-align: center;
+        &__link {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    .main {
+        &__name {
+            font-size: 24px;
+            border: 2px #01989B solid;
+            padding: 10px 10px;
+        }
+        &__profession {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        &__info {
+            padding: 60px 0 20px 0;
+        }
+    }
+    .menu__list {
+        display: block;
+        text-align: center;
+    }
+    .about__text {
+        font-size: 16px;
+    }
+    .portfolio__item:first-child::after {
+        right: -20px;
+    }
+}
