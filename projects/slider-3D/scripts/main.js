@@ -8,7 +8,7 @@ $(document).ready(function(){
 	
 	// Отрисовка изображения первого слайда, после того, как браузер получит изображение
 	let img = new Image();
-	img.src = '/images/slider-1.png';
+	img.src = 'images/slider-1.png';
 	
 	img.onload = function(){
 		$(sliderItem).css('visibility', 'visible');
