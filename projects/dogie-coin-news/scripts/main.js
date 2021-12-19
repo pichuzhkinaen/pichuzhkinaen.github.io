@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', function() {
             newCard.setAttribute('data-postid', id);
             // newCard.id = id;
             newCard.innerHTML =             
-                `<img class="cards__image" src="../images/card-${id}.jpg" alt="image-${i}">
+                `<img class="cards__image" src="images/card-${id}.jpg" alt="image-${i}">
                     <div class="cards__inner">
                         <div class="cards__text-block">
                             <h3 class="cards__title">${title}</h3>
