@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="styles/main.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header"><a class="header__link" href="/"><img class="header__image" src="images/logo.svg" alt="Логотип дизайн-студии Магвай"></a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">УСЛУГИ</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">АБОНЕМЕНТЫ</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">ПОЧЕМУ МЫ</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">ОБОРУДОВАНИЕ</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">АКЦИИ</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="menu__group-wrapper"><a class="menu__phone button-icon" href="tel:+78442844242"></a>
+              <button class="button menu__button" type="button" data-fancybox data-src="#form">ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
+          </nav>
+          <div class="header__group-wrapper"><a class="header__phone button-icon" href="tel:+78442844242"></a>
+            <button class="button" type="button" data-fancybox data-src="#form">ОСТАВИТЬ ЗАЯВКУ</button>
+          </div>
+          <div class="hamburger">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+          </div>
+        </header>
+      </div>
+      <main class="content">
+        <div class="content__wrapper">
+          <section class="carousel">
+            <div class="carousel__wrapper" id="carousel">
+              <div class="carousel__slide"><img class="carousel__image" src="/images/slide-1.jpg" alt="slide-1">
+                <div class="carousel__inner">
+                  <div class="container">
+                    <h2 class="title">Полет Илона Маска <br> и DOGIE COIN</h2>
+                    <p class="carousel__tizer">В прошлый четверг все офигели от полета DOGIE COIN на марс.</p>
+                    <button class="button carousel__button" type="button" data-fancybox data-src="#form">ОСТАВИТЬ ЗАЯВКУ</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__slide"><img class="carousel__image" src="/images/slide-2.jpg" alt="slide-2">
+                <div class="carousel__inner">
+                  <div class="container">
+                    <h2 class="title">DOGIE COIN <br> УПАЛ</h2>
+                    <p class="carousel__tizer">Все в шоке, я потерял все деньги</p>
+                    <button class="button carousel__button" type="button" data-fancybox data-src="#form">ОСТАВИТЬ ЗАЯВКУ</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__slide"><img class="carousel__image" src="/images/slide-3.jpg" alt="slide-3">
+                <div class="carousel__inner">
+                  <div class="container">
+                    <h2 class="title">Эпическое возвращение <br> на хаи</h2>
+                    <p class="carousel__tizer">Все в шоке, я снова богат</p>
+                    <button class="button carousel__button" type="button" data-fancybox data-src="#form">ОСТАВИТЬ ЗАЯВКУ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="toggle">
+              <div class="container">
+                <ul class="toggle__list">
+                  <li class="toggle__item active">DOgie coin</li>
+                  <li class="toggle__item">ПАДЕНИЕ</li>
+                  <li class="toggle__item">ВОЗВРАЩЕНИЕ</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="cards">
+            <div class="container">
+              <h2 class="title">Карточки</h2>
+              <div class="cards__list"></div>
+              <button class="button cards__button" id="loadmore" type="button"><span class="button__text">ЗАГРУЗИТЬ ЕЩЕ</span></button>
+            </div>
+          </section>
+        </div>
+      </main>
+      <div class="form-wrapper">
+        <form class="form" id="form" novalidate>
+          <div class="form__image"></div>
+          <div class="form__inner"><span class="title form__title">Оставьте заявку</span>
+            <p class="form__text">Оставьте заявку и наш менеджер свяжется с вами в течение 10 -15 минут</p>
+            <button class="form__close" type="button"></button>
+            <div class="form__group">
+              <input class="form__input" id="name" type="text" name="name" autocomplete="off" required>
+              <label class="form__label" for="name">Ваше имя*</label>
+            </div>
+            <div class="form__group">
+              <input class="form__input" id="email" type="email" name="email" autocomplete="off" required>
+              <label class="form__label" for="email">E-mail*</label>
+            </div>
+            <div class="form__group">
+              <input class="form__input" id="phone" type="tel" name="phone" autocomplete="off" data-phone>
+              <label class="form__label" for="phone">+7(___)</label>
+            </div>
+            <div class="form__group">
+              <textarea class="form__textarea" id="formtext" name="text" required></textarea>
+              <label class="form__label" for="formtext">Ваш вопрос*</label>
+            </div>
+            <div class="form__submit-wrapper">
+              <button class="button form__button" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+              <p class="form__agreement">Нажимая на кнопку “Оставить заявку” вы соглашаетесь<br><a class="form__link" href="#">с “Пользовательским соглашением”</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
