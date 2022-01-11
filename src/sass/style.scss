@@ -162,7 +162,7 @@ h1, h2, h3 {
     }
     &__item {
         position: relative;
-        // display: none;
+        max-width: 350px;
         box-shadow: 0 0 1px #b8b7b7;
         margin: 0 33px 33px;
         transition: box-shadow .3s ease;
