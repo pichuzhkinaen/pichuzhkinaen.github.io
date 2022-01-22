@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="styles/main.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper">
+        <div class="container">
+          <header class="header">
+            <div class="header__logo"><img src="images/logo.svg" alt="Логотип"></div>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">ГЛАВНАЯ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">НОВОСТИ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">О&nbsp;НАС</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">ТУДА</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">СЮДА</a></li>
+              </ul>
+            </nav>
+            <div class="hamburger">
+              <div class="hamburger__square"></div>
+              <div class="hamburger__square"></div>
+              <div class="hamburger__square"></div>
+              <div class="hamburger__square"></div>
+            </div>
+          </header>
+        </div>
+      </div>
+      <main class="main">
+        <button class="popup-button"><span class="popup-button__text">Дайте мне открыть попап!</span></button>
+        <section class="content">
+          <div class="container">
+            <h1 class="title">НЕЖДАННЫЕ ГОСТИ</h1>
+            <div class="carousel-wrapper">
+              <div class="carousel-main">
+                <div class="carousel-main__slide"><img src="images/image-1.jpg" alt="Изображение к статье 1"></div>
+                <div class="carousel-main__slide hide"><img src="images/image-2.jpg" alt="Изображение к статье 2"></div>
+                <div class="carousel-main__slide hide"><img src="images/image-3.jpg" alt="Изображение к статье 3"></div>
+              </div>
+              <div class="carousel-small">
+                <div class="carousel-small__slide hide" id="1"><img src="images/image-small-1.jpg" alt="Изображение к статье 1"></div>
+                <div class="carousel-small__slide" id="2"><img src="images/image-small-2.jpg" alt="Изображение к статье 2"></div>
+                <div class="carousel-small__slide" id="3"><img src="images/image-small-3.jpg" alt="Изображение к статье 3"></div>
+              </div>
+            </div>
+            <div class="content__author-grade"><span class="copyright">Автор: Рональд Руэл Толкиен</span>
+              <div class="star-rating" id="block-star-main">
+                <input class="star-rating__input" id="star-main-4" type="radio" name="star"/>
+                <label class="star-rating__star" for="star-main-4"></label>
+                <input class="star-rating__input" id="star-main-3" type="radio" name="star"/>
+                <label class="star-rating__star" for="star-main-3"></label>
+                <input class="star-rating__input" id="star-main-2" type="radio" name="star"/>
+                <label class="star-rating__star" for="star-main-2"></label>
+                <input class="star-rating__input" id="star-main-1" type="radio" name="star"/>
+                <label class="star-rating__star" for="star-main-1"></label>
+                <input class="star-rating__input" id="star-main-0" type="radio" name="star"/>
+                <label class="star-rating__star" for="star-main-0"></label>
+              </div>
+            </div>
+            <p class="content__text">Жил-был в норе под землей хоббит. Не в какой-то там мерзкой грязной сырой норе, где со всех сторон торчат хвосты червей и противно пахнет плесенью, но и не в сухой песчаной голой норе, где не на что сесть и нечего съесть. Нет, нора была хоббичья, а значит — благоустроенная.</p>
+            <p class="content__text">Она начиналась идеально круглой, как иллюминатор, дверью, выкрашенной зеленой краской, с сияющей медной ручкой точно посередине. Дверь отворялась внутрь, в длинный коридор, похожий на железнодорожный туннель, но туннель без гари и без дыма и тоже очень благоустроенный: стены там были обшиты панелями, пол выложен плитками и устлан ковром, вдоль стен стояли полированные стулья, и всюду были прибиты крючочки для шляп и пальто, так как хоббит любил гостей. Туннель вился все дальше и дальше и заходил довольно глубоко, но не в самую глубину Холма, как его именовали жители на много миль в окружности. По обеим сторонам туннеля шли двери — много-много круглых дверей. Хоббит не признавал восхождений по лестницам: спальни, ванные, погреба, кладовые (целая куча кладовых), гардеробные (хоббит отвел несколько комнат под хранение одежды), кухни, столовые располагались в одном этаже и, более того, в одном и том же коридоре. Лучшие комнаты находились по левую руку, и только в них имелись окна — глубоко сидящие круглые окошечки с видом на сад и на дальние луга, спускавшиеся к реке.</p>
+            <p class="content__text">Наш хоббит был весьма состоятельным хоббитом по фамилии Бэггинс. Бэггинсы проживали в окрестностях Холма с незапамятных времен и считались очень почтенным семейством не только потому, что были богаты, но и потому, что с ними никогда и ничего не приключалось и они не позволяли себе ничего неожиданного: всегда можно было угадать заранее, не спрашивая, что именно скажет тот или иной Бэггинс по тому или иному поводу. Но мы вам поведаем историю о том, как одного из Бэггинсов втянули-таки в приключения и, к собственному удивлению, он начал говорить самые неожиданные вещи и совершать самые неожиданные поступки. Может быть, он и потерял уважение соседей, но зато приобрел... впрочем, увидите сами, приобрел он в конце концов или нет. Матушка нашего хоббита... кстати, кто такой хоббит? Пожалуй, стоит рассказать о хоббитах подробнее, так как в наше время они стали редкостью и сторонятся Высокого Народа, как они называют нас, людей. Сами они низкорослый народец, примерно в половину нашего роста и пониже бородатых гномов. Бороды у хоббитов нет. Волшебного в них тоже, в общем-то, ничего нет, если не считать волшебным умение быстро и бесшумно исчезать в тех случаях, когда всякие бестолковые, неуклюжие верзилы, вроде нас с вами, с шумом и треском ломятся, как слоны. У хоббитов толстенькое брюшко; одеваются они ярко, преимущественно в зеленое и желтое; башмаков не носят, потому что на ногах у них от природы жесткие кожаные подошвы и густой теплый бурый мех, как и на голове. Только на голове он курчавится. У хоббитов длинные ловкие темные пальцы на руках, добродушные лица; смеются они густым утробным смехом (особенно после обеда, а обедают они, как правило дважды в день, если получится).</p>
+            <p class="content__text">Теперь вы знаете достаточно, и можно продолжать. Как я уже сказал, матушка нашего хоббита, то есть Бильбо Бэггинса, была легендарная Белладонна Тук, одна из трех достопамятных дочерей Старого Тука, главы хоббитов, живших По Ту Сторону Реки, то есть речушки, протекавшей у подножия Холма. Поговаривали, будто давным-давно кто-то из Туков взял себе жену из эльфов. Глупости, конечно, но и до сих пор во всех Туках и в самом деле проскальзывало что-то не совсем хоббитовское: время от времени кто-нибудь из клана Туков пускался на поиски приключений. Он исчезал вполне деликатно, и семья старалась замять это дело. Но факт остается фактом: Туки считались не столь почтенным родом, как Бэггинсы, хотя, вне всякого сомнения, были богаче. Нельзя, правда, сказать, что после того как Белладонна Тук вышла замуж за мистера Банго Бэггинса, она когда-нибудь пускалась на поиски приключений...</p>
+          </div>
+        </section>
+      </main>
+      <div class="similar">
+        <div class="container">
+          <div class="similar__title">Смотрите также похожие статьи:</div>
+          <div class="similar__block-wrapper"><a class="similar__block" href="#"> 
+              <div class="similar__autor"> <img class="similar__photo" src="images/autor-1.jpg" alt="Автор статьиВыход новой книги!">
+                <div class="similar__autor-right">
+                  <div class="similar__name">Ник Перумов</div>
+                  <div class="star-rating" id="block-star-similar-0">
+                    <input class="star-rating__input" id="star-similar-0-4" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-0-4"></label>
+                    <input class="star-rating__input" id="star-similar-0-3" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-0-3"></label>
+                    <input class="star-rating__input" id="star-similar-0-2" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-0-2"></label>
+                    <input class="star-rating__input" id="star-similar-0-1" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-0-1"></label>
+                    <input class="star-rating__input" id="star-similar-0-0" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-0-0"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="similar__subtitle">Выход новой книги!</div>
+              <div class="similar__text">Неспокойные времена грядут в благословенной Долине магов. Гильдия боевых магов достигла своего расцвета: заказы из разных миров сыплются один за другим, другие Гильдии требуют сопровождения в путешествиях, а боевых магов на всех не хватает. Однако законы Долины, приведут к катастрофе. <br> РичардАссини, глава Гильдии, призывает изменить закон. </div></a><a class="similar__block" href="#"> 
+              <div class="similar__autor"> <img class="similar__photo" src="images/autor-2.jpg" alt="Автор статьиАнжею не понравился сериал...">
+                <div class="similar__autor-right">
+                  <div class="similar__name">Анжей Сапковский</div>
+                  <div class="star-rating" id="block-star-similar-1">
+                    <input class="star-rating__input" id="star-similar-1-4" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-1-4"></label>
+                    <input class="star-rating__input" id="star-similar-1-3" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-1-3"></label>
+                    <input class="star-rating__input" id="star-similar-1-2" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-1-2"></label>
+                    <input class="star-rating__input" id="star-similar-1-1" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-1-1"></label>
+                    <input class="star-rating__input" id="star-similar-1-0" type="radio" name="star"/>
+                    <label class="star-rating__star" for="star-similar-1-0"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="similar__subtitle">Анжею не понравился сериал...</div>
+              <div class="similar__text">Автор фэнтезийного цикла книг "Ведьмак" Анджей Сапковский вновь опроверг свой статус фаната номер один одноимённого сериала Netflix. Я более чем недоволен исполнением ведьмака Генри Кавиллом. Лучше бы бомжа польского поймали, вышло бы намного ближе к Геральту. <br> единства мнений по поводу проекта Netflix у зрителей нет</div></a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">Права обладателя сей наипрекраснейшей странички. Жмите для ознакомления, сударь. BODRYI-FILIN@2021г.</footer>
+      <div class="popup" id="popup">
+        <form class="form popup__form">
+          <div class="form__title">Получите больше интересных статей!</div>
+          <input class="form__input" name="name" type="text" placeholder="Имя *" requaired>
+          <input class="form__input" name="email" type="text" placeholder="E-mail *" requaired>
+          <button class="form__send">Отправить</button>
+          <button class="form__close" type="button"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg></button>
+        </form>
+      </div>
+    </div>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
